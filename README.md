@@ -6,13 +6,13 @@
 
 1. Steam 상점에서 **tModLoader**를 무료로 설치하고 라이브러리에서 실행합니다.
 2. 모드 관리 화면의 **Open Mods Folder**로 Mods 폴더를 엽니다. 일반적인 Windows 경로는 `%USERPROFILE%\Documents\My Games\Terraria\tModLoader\Mods`입니다.
-3. 전달받거나 직접 빌드한 **`PotionRoulette.tmod`**를 Mods 폴더에 복사합니다.
+3. [빌드된 PotionRoulette.tmod 다운로드](https://github.com/qqjjw/terraria-roulette-mod/raw/refs/heads/main/dist/PotionRoulette.tmod) 후 Mods 폴더에 복사합니다. 저장소를 내려받았다면 `dist/PotionRoulette.tmod`를 사용합니다.
 4. 모드 관리에서 **체력 포션 룰렛**을 활성화하고 모드를 다시 불러오거나 tModLoader를 재시작합니다.
 5. 월드에서 체력을 조금 깎고 치유 포션을 마십니다. 채팅에 `[포션 룰렛]` 결과가 뜨면 적용된 것입니다. 빠른 회복 단축키도 지원합니다.
 
 멀티는 호스트와 참가자 모두 같은 tModLoader 버전과 모드를 사용한 뒤 **멀티플레이 → Host & Play**로 방을 열고 Steam 초대 등으로 참가합니다. 기본 Terraria 대신 tModLoader로 실행해야 합니다.
 
-빌드 결과물은 로컬 `artifacts/PotionRoulette.tmod`에 생성됩니다. `.tmod`는 Git에 포함하지 않으므로 저장소만 내려받은 경우 아래 개발 방법으로 빌드하세요.
+공유용 빌드 결과물은 `dist/PotionRoulette.tmod`에 포함되어 있어 직접 빌드할 필요가 없습니다. 개발 시 새 빌드 결과물은 로컬 `artifacts/PotionRoulette.tmod`에 생성됩니다. 배포할 때 이 파일을 `dist/PotionRoulette.tmod`에 복사해 소스와 함께 커밋하세요.
 
 ## 발동과 확률
 
@@ -36,6 +36,7 @@
 
 - `src/PotionRoulette/`: 다른 컴퓨터에 복사할 수 있는 모드 소스
 - `scripts/`: 게임 실행 없이 확률 및 빌드 확인
+- `dist/PotionRoulette.tmod`: 바로 적용할 수 있는 공유용 빌드
 - `artifacts/`: 로컬 빌드 결과 (Git 제외)
 - `.build-tools/`: 로컬 빌드 의존성 (Git 제외)
 
