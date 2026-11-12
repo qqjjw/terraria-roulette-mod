@@ -1,0 +1,3 @@
+displayName = 체력 포션 룰렛
+author = Local
+version = 0.1.0
